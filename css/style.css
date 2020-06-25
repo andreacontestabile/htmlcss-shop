@@ -10,7 +10,21 @@
 
 .product-item {
   display: inline-block;
+  position:relative;
   width: 300px;
   height: 372px;
   background-color: #d1d1d1;
+}
+
+.discount-tag {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 2px 5px;
+  background-color: green;
+}
+
+.product-item:nth-child(even) .discount-tag {
+  background-color: red;
 }
