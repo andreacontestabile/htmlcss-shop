@@ -16,6 +16,10 @@
   background-color: #d1d1d1;
 }
 
+.product-item:hover {
+  cursor: pointer;
+}
+
 .discount-tag {
   display: inline-block;
   position: absolute;
@@ -27,4 +31,18 @@
 
 .product-item:nth-child(even) .discount-tag {
   background-color: red;
+}
+
+.heart {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  color: red;
+  text-align: center;
+  font-size: 38px;
+}
+
+.product-item:hover .heart {
+  display: block;
 }
